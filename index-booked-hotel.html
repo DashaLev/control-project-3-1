@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row flex-wrap">
+                <div class="col-xs-12 text-center col-sm-2">
+                    <a href="index-home.html">
+                        <img src="images/logo_black.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-xs-12 alagin-center col-sm-10">
+                    <ul class="menu">
+                        <li><a href="https://dashalev.github.io/control-project/">HOME</a></li>
+                        <li><a href="https://dashalev.github.io/control-project-2/">ABOUT US</a></li>
+                        <li><a href="">BOOKED HOTEL</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="flex-center">
+                        <form action="" method="" class="search-form">
+                            <div>
+                                <div class="search-title">Where do you want to go?</div>
+                                <input type="text" class="place" name="City-Country" placeholder="Place or Hotel">
+                            </div>
+                            <div class="flex-sm">
+                                <div class="reservation-dates">
+                                    <div>
+                                        <div class="search-title">Arrival date</div>
+                                        <input type="date" class="chekin-date" name="Chekin" value="">
+                                    </div>
+                                    <div>
+                                        <div class="search-title"> Departure date</div>
+                                        <input type="date" class="chekout-date" name="Chekout" value="">
+                                    </div>  
+                                </div>
+                                <div>
+                                    <div class="search-title">Guests and rooms</div>
+                                    <select name="Adults" class="search-adult">
+                                        <option value="1">1 adult</option>
+                                        <option value="2">2 adults</option>
+                                        <option value="3">3 adults</option>
+                                        <option value="4">4 adults</option>
+                                        <option value="5">5 adults</option>
+                                        <option value="6">6 adults</option>
+                                        <option value="7">7 adults</option>
+                                        <option value="8">8 adults</option>
+                                        <option value="9">9 adults</option>
+                                        <option value="10">10 adults</option>
+                                        <option value="11">11 adults</option>
+                                        <option value="12">12 adults</option>
+                                        <option value="13">13 adults</option>
+                                        <option value="14">14 adults</option>
+                                        <option value="15">15 adults</option>
+                                        <option value="16">16 adults</option>
+                                        <option value="17">17 adults </option>
+                                        <option value="18">18 adults</option>
+                                        <option value="19">19 adults</option>
+                                        <option value="20">20 adults</option>
+                                        <option value="21">21 adults</option>
+                                        <option value="22">22 adults</option>
+                                        <option value="23">23 adults</option>
+                                        <option value="24">24 adults</option>
+                                        <option value="25">25 adults</option>
+                                        <option value="26">26 adults</option>
+                                        <option value="27">27 adults</option>
+                                        <option value="28">28 adults</option>
+                                        <option value="29">29 adults</option>
+                                        <option value="30">30 adults</option>
+                                    </select>
+                                    <select name="Children" class="search-children">
+                                        <option value="without children">---</option>
+                                        <option value="1">1 child</option>
+                                        <option value="2">2 children</option>
+                                        <option value="3">3 children</option>
+                                        <option value="4">4 children</option>
+                                        <option value="5">5 children</option>
+                                        <option value="6">6 children</option>
+                                        <option value="7">7 children</option>
+                                        <option value="8">8 children</option>
+                                        <option value="9">9 children</option>
+                                        <option value="10">10 children</option>
+                                    </select>
+                                    <select name="Rooms" class="search-rooms">
+                                        <option value="1">1 room</option>
+                                        <option value="2">2 rooms</option>
+                                        <option value="3">3 rooms</option>
+                                        <option value="4">4 rooms</option>
+                                        <option value="5">5 rooms</option>
+                                        <option value="6">6 rooms</option>
+                                        <option value="7">7 rooms</option>
+                                        <option value="8">8 rooms</option>
+                                        <option value="9">9 rooms</option>
+                                        <option value="10">10 rooms</option>
+                                        <option value="11">11 rooms</option>
+                                        <option value="12">12 rooms</option>
+                                        <option value="13">13 rooms</option>
+                                        <option value="14">14 rooms</option>
+                                        <option value="15">15 rooms</option>
+                                        <option value="16">16 rooms</option>
+                                        <option value="17">17 rooms</option>
+                                        <option value="18">18 rooms</option>
+                                        <option value="19">19 rooms</option>
+                                        <option value="20">20 rooms</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="search-button">RESERVE NOW</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-wrap">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="flex-center">
+                        <form action="" class="filter-menu">
+                            <div class="filter-option">
+                                <div class="filter-title">Your budget (per night)</div>
+                                <div>
+                                    <input type="checkbox" id="MinBudget">
+                                    <label for="MinBudget"><span>10 $ - 200 $</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="MinMiddleBudget">
+                                    <label for="MinMiddleBudget"><span>201 $ - 600 $ </span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="MiddleBudget">
+                                    <label for="MiddleBudget"><span>601 $ - 1300 $ </span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="MinHightBudget">
+                                    <label for="MinHightBudget"><span>1301 $ - 2000 $ </span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="HightBudget">
+                                    <label for="HightBudget"><span>2001 $ - 3500 $ </span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="MaxHightBudget">
+                                    <label for="MaxHightBudget"><span>3501 $ + </span></label>
+                                </div>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-title">Nutrition</div>
+                                <div>
+                                    <input type="checkbox" id="RoomOnly">
+                                    <label for="RoomOnly"><span>Room Only</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="BedandBreakfast">
+                                    <label for="BedandBreakfast"><span>Bed and Breakfast</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="HalfBoard">
+                                    <label for="HalfBoard"><span>Half Board</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="FullBoard">
+                                    <label for="FullBoard"><span>Full Board</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="AllInclusive">
+                                    <label for="AllInclusive"><span>All Inclusive</span></label>
+                                </div>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-title">Beach</div>
+                                <div>
+                                    <input type="checkbox" id="FirstLine">
+                                    <label for="FirstLine"><span>1 line</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="SecondLine">
+                                    <label for="SecondLine"><span>2 Line</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="ThirdLine">
+                                    <label for="ThirdLine"><span> 3 Line</span></label>
+                                </div>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-title">Conveniences</div>
+                                <div>
+                                    <input type="checkbox" id="FreeWiFi">
+                                    <label for="FreeWiFi"><span>Free Wi-Fi</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="NonSmokingRoom">
+                                    <label for="NonSmokingRoom"><span>Non-smoking roome</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="TransferFromToAirport">
+                                    <label for="TransferFromToAirport"><span>Transfer from/to airport</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="PetsAllowed">
+                                    <label for="PetsAllowed"><span>Pets allowed</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Parking">
+                                    <label for="Parking"><span>Parking</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="FitnessCenter">
+                                    <label for="FitnessCenter"><span>Fitness center</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="SwimmingPool">
+                                    <label for="SwimmingPool"><span>Swimming pool</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="ElectricVehicleChargingStation">
+                                    <label for="ElectricVehicleChargingStation"><span>Electric vehicle charging
+                                            station</span></label>
+                                </div>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-title">Number of stars</div>
+                                <div>
+                                    <input type="checkbox" id="OneStar">
+                                    <label for="OneStar"><span>1</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="TwoStars">
+                                    <label for="TwoStars"><span>2</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="ThreeStars">
+                                    <label for="ThreeStars"><span>3</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="FourStars">
+                                    <label for="FourStars"><span>4</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="FiveStars">
+                                    <label for="FiveStars"><span>5</span></label>
+                                </div>
+                            </div>
+                            <div class="showmoreoptions">
+                                <a href="">Show more options ...</a>
+                            </div>
+                            <div class="filtersubmit"><button>SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9">
+                    <div class="row flex-wrap">
+                        <div class="col-xs-12">
+                            <div class="hotel-card">
+                        <div class="hotel-photo">
+                            <a href="https://ceramic-paris-hotel.com/ru/">
+                                <img src="images/hotel-photo1.jpg" alt="Hotel photo">
+                            </a>
+                            <button class="wishlist"></button>
+                            <a href="https://ceramic-paris-hotel.com/ru/">
+                                <img src="images/hotel-photo2.jpg" alt="Hotel photo">
+                            </a>
+                        </div>
+                        <div class="hotel-card-descriptoin">
+                            <div class="hotel-name">
+                                <a href="index-booked-hotel-reservation.html">Elysées Ceramic</a>
+                            </div>
+                            <div class="hotel-address">
+                                <a href="index-booked-hotel-reservation.html">34, Avenue de Wagram, 8th arrondissement:
+                                    Champs Elysees, 75008 Paris, France</a>
+                            </div>
+                            <div class="hotel-address-map">
+                                <a href="https://goo.gl/maps/hiUwAmMSeMe1qzWF6">Look at the map</a>
+                            </div>
+                            <div class="hotel-conditions">All rooms at the Elysées Ceramic are equipped with a minibar
+                                and
+                                flat-screen TV with satellite channels. The rooms are decorated in a modern style with
+                                printed wallpaper on the walls. Wi-Fi is provided. The private bathroom has a bath or
+                                shower.</div>
+                            <div class="hotel-comments">
+                                <a href="">3 020 Comments</a>
+                            </div>
+                        </div>
+                        <div class="hotel-card-information">
+                            <div class="hotel-mark">
+                                <div class="hotel-rating"></div>
+                                <div class="hotel-grade">10</div>
+                            </div>
+                            <div class="reservation-info">
+                                <div class="numder-booked-nights">11 nights</div>
+                                <div class="number-adults"> 2 aduilts</div>
+                                <div class="number-children"> 1 child</div>
+                            </div>
+                            <div class="center">
+                                <div class="room-price">USD 1 275</div>
+                            </div>
+                            <div class="look-avaible-rooms">
+                                <a href="index-booked-hotel-reservation.html">Look available rooms</a>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="hotel-card">
+                        <div class="hotel-photo">
+                            <a href="https://ceramic-paris-hotel.com/ru/">
+                                <img src="images/hotel-photo1.jpg" alt="Hotel photo">
+                            </a>
+                            <button class="wishlist"></button>
+                            <a href="https://ceramic-paris-hotel.com/ru/">
+                                <img src="images/hotel-photo2.jpg" alt="Hotel photo">
+                            </a>
+                        </div>
+                        <div class="hotel-card-descriptoin">
+                            <div class="hotel-name">
+                                <a href="index-booked-hotel-reservation.html">Elysées Ceramic</a>
+                            </div>
+                            <div class="hotel-address">
+                                <a href="index-booked-hotel-reservation.html">34, Avenue de Wagram, 8th arrondissement:
+                                    Champs Elysees, 75008 Paris, France</a>
+                            </div>
+                            <div class="hotel-address-map">
+                                <a href="https://goo.gl/maps/hiUwAmMSeMe1qzWF6">Look at the map</a>
+                            </div>
+                            <div class="hotel-conditions">All rooms at the Elysées Ceramic are equipped with a minibar
+                                and
+                                flat-screen TV with satellite channels. The rooms are decorated in a modern style with
+                                printed wallpaper on the walls. Wi-Fi is provided. The private bathroom has a bath or
+                                shower.</div>
+                            <div class="hotel-comments">
+                                <a href="">3 020 Comments</a>
+                            </div>
+                        </div>
+                        <div class="hotel-card-information">
+                            <div class="hotel-mark">
+                                <div class="hotel-rating"></div>
+                                <div class="hotel-grade">10</div>
+                            </div>
+                            <div class="reservation-info">
+                                <div class="numder-booked-nights">11 nights</div>
+                                <div class="number-adults"> 2 aduilts</div>
+                                <div class="number-children"> 1 child</div>
+                            </div>
+                            <div class="center">
+                                <div class="room-price">USD 1 275</div>
+                            </div>
+                            <div class="look-avaible-rooms">
+                                <a href="index-booked-hotel-reservation.html">Look available rooms</a>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="hotel-card">
+                        <div class="hotel-photo">
+                            <a href="https://ceramic-paris-hotel.com/ru/">
+                                <img src="images/hotel-photo1.jpg" alt="Hotel photo">
+                            </a>
+                            <button class="wishlist"></button>
+                            <a href="https://ceramic-paris-hotel.com/ru/">
+                                <img src="images/hotel-photo2.jpg" alt="Hotel photo">
+                            </a>
+                        </div>
+                        <div class="hotel-card-descriptoin">
+                            <div class="hotel-name">
+                                <a href="index-booked-hotel-reservation.html">Elysées Ceramic</a>
+                            </div>
+                            <div class="hotel-address">
+                                <a href="index-booked-hotel-reservation.html">34, Avenue de Wagram, 8th arrondissement:
+                                    Champs Elysees, 75008 Paris, France</a>
+                            </div>
+                            <div class="hotel-address-map">
+                                <a href="https://goo.gl/maps/hiUwAmMSeMe1qzWF6">Look at the map</a>
+                            </div>
+                            <div class="hotel-conditions">All rooms at the Elysées Ceramic are equipped with a minibar
+                                and
+                                flat-screen TV with satellite channels. The rooms are decorated in a modern style with
+                                printed wallpaper on the walls. Wi-Fi is provided. The private bathroom has a bath or
+                                shower.</div>
+                            <div class="hotel-comments">
+                                <a href="">3 020 Comments</a>
+                            </div>
+                        </div>
+                        <div class="hotel-card-information">
+                            <div class="hotel-mark">
+                                <div class="hotel-rating"></div>
+                                <div class="hotel-grade">10</div>
+                            </div>
+                            <div class="reservation-info">
+                                <div class="numder-booked-nights">11 nights</div>
+                                <div class="number-adults"> 2 aduilts</div>
+                                <div class="number-children"> 1 child</div>
+                            </div>
+                            <div class="center">
+                                <div class="room-price">USD 1 275</div>
+                            </div>
+                            <div class="look-avaible-rooms">
+                                <a href="index-booked-hotel-reservation.html">Look available rooms</a>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="hotel-card">
+                        <div class="hotel-photo">
+                            <a href="https://ceramic-paris-hotel.com/ru/">
+                                <img src="images/hotel-photo1.jpg" alt="Hotel photo">
+                            </a>
+                            <button class="wishlist"></button>
+                            <a href="https://ceramic-paris-hotel.com/ru/">
+                                <img src="images/hotel-photo2.jpg" alt="Hotel photo">
+                            </a>
+                        </div>
+                        <div class="hotel-card-descriptoin">
+                            <div class="hotel-name">
+                                <a href="index-booked-hotel-reservation.html">Elysées Ceramic</a>
+                            </div>
+                            <div class="hotel-address">
+                                <a href="index-booked-hotel-reservation.html">34, Avenue de Wagram, 8th arrondissement:
+                                    Champs Elysees, 75008 Paris, France</a>
+                            </div>
+                            <div class="hotel-address-map">
+                                <a href="https://goo.gl/maps/hiUwAmMSeMe1qzWF6">Look at the map</a>
+                            </div>
+                            <div class="hotel-conditions">All rooms at the Elysées Ceramic are equipped with a minibar
+                                and
+                                flat-screen TV with satellite channels. The rooms are decorated in a modern style with
+                                printed wallpaper on the walls. Wi-Fi is provided. The private bathroom has a bath or
+                                shower.</div>
+                            <div class="hotel-comments">
+                                <a href="">3 020 Comments</a>
+                            </div>
+                        </div>
+                        <div class="hotel-card-information">
+                            <div class="hotel-mark">
+                                <div class="hotel-rating"></div>
+                                <div class="hotel-grade">10</div>
+                            </div>
+                            <div class="reservation-info">
+                                <div class="numder-booked-nights">11 nights</div>
+                                <div class="number-adults"> 2 aduilts</div>
+                                <div class="number-children"> 1 child</div>
+                            </div>
+                            <div class="center">
+                                <div class="room-price">USD 1 275</div>
+                            </div>
+                            <div class="look-avaible-rooms">
+                                <a href="index-booked-hotel-reservation.html">Look available rooms</a>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row hide-XS">
+                <div class="col-xs-12">
+                    <a href="index-home.html">
+                        <img src="images/logo_white.png" class="logo" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row flex-wrap">
+                <div class="col-xs-12 footer-contacts  col-sm-4  col-md-3">
+                    <div class="phone-number">+12 345 678 90</div>
+                    <div class="email-adress">free@gmail.com</div>
+                    <div class="adress">123, Main Street, NY 456789</div>
+                </div>
+                <div class="col-xs-12 hide-XS  col-sm-4 col-md-6">
+                    <ul class="menu-footer">
+                        <li><a href="https://dashalev.github.io/control-project/">HOME</a></li>
+                        <li><a href="https://dashalev.github.io/control-project-2/">ABOUT US</a></li>
+                        <li><a href="">BOOKED HOTEL</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12  col-sm-4  col-md-3">
+                    <div class="social-networks">
+                        We are in social networks
+                    </div>
+                    <ul class="social-networks-list">
+                        <li><a href="" class="facebook"></a></li>
+                        <li><a href="" class="twitter"></a></li>
+                        <li><a href="" class="instagram"></a></li>
+                        <li><a href="" class="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer-information">&#169;Copyright 2021. All Rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
