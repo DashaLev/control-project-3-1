@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 .header {
@@ -15,6 +15,7 @@ body {
     top: 0;
     z-index: 10;
     background-color: white;
+    border-bottom: 3px solid #4e26fd;
 }
 .container {
     width: 100%;
@@ -68,7 +69,7 @@ body {
         width: 270px;
     }
     .search-title {
-        padding: 10px 0 0 10px;
+        padding: 10px 0 5px 10px;
     }
     .chekin-date {
         height: 35px;
@@ -82,12 +83,13 @@ body {
     .search-adult {
         height: 35px;
         width: 80px;
-        margin-right: 5px;
     }
     .search-children {
         height: 35px;
         width: 90px;
-        margin-right: 6px;
+        margin-right: 3px;
+        margin-left: 3px;
+
     }
     .search-rooms {
         height: 35px;
@@ -124,19 +126,17 @@ body {
     margin: 20px 0;
     background-color:rgba(0, 0, 0, 0.2);
     border-bottom: 25px solid $maincolor;
-    padding-left: 20px;
-    position: sticky;
+    padding-left: 10px;
 }
 .filter-title {
-    padding: 15px;
-    font-size: 20px;
+    padding: 25px 10px 10px 10px;
     text-decoration: overline;
 }
 .showmoreoptions {
-    padding: 20px 15px;
+    padding: 15px 0;
     a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 18px;
         color: black;
     }
     &:hover {
@@ -267,13 +267,12 @@ body {
             background: url(images/star_ran.png) no-repeat 0 49%;
         }
         .hotel-grade {
-            font-size: 15px;
-            @include box(50px);
-            font-size: 25px;
+            @include box(45px);
+            font-size: 20px;
             background-color: yellow;
             border-radius: 50%;
             text-align: center;
-            line-height: 50px;
+            line-height: 45px;
         }
 
     }
@@ -291,10 +290,10 @@ body {
     
         .room-price {
             width: calc(100% - 40px);
-            height: 35px;
+            height: 40px;
             text-align: center;
-            line-height: 35px;
-            font-size: 30px;
+            line-height: 40px;
+            font-size: 22px;
             background-color: rgb(45, 172, 45);
             border-radius: 5px;
             margin-bottom: 30px;
@@ -312,7 +311,7 @@ body {
             height: 45px;
             line-height: 45px;
             border-radius: 5px;
-            font-size: 25px;
+            font-size: 18px;
             border: 2px solid rgb(7, 7, 136);
             &:hover {
                 color: white;
@@ -351,7 +350,8 @@ body {
         background: url(images/location_icon.png) no-repeat;
     }
     
-} 
+}
+
 .social-networks {
     color: white;
     text-align: center;
@@ -521,9 +521,9 @@ body {
         li {
             margin-bottom: 15px;
             a {
-                height: 40px;
-                font-size: 30px;
-                line-height: 40px;
+                height: 30px;
+                font-size: 20px;
+                line-height: 30px;
             }
         }
     }
@@ -549,8 +549,8 @@ body {
             width:667px;
         }
         .search-button {
-            margin-top: 26px;
-            margin-left: 10px;
+            margin-top: 31px;
+            margin-left: 8px;
             width: 152px;
 
         }
@@ -562,8 +562,8 @@ body {
             margin-left: -1px;
         }
         .search-children {
-            margin-left: -4px;
-            margin-right: -4px;
+            margin-left: -8px;
+            margin-right: -7px;
         }
     }
     .flex-sm {
@@ -580,7 +580,7 @@ body {
             margin-right: 10px;
 
             a {
-              @include linkMenuA(white);
+              @include linkMenuA(white,16px);
               @include box(max-content, 30px);
               line-height: 30px; 
             }
@@ -615,7 +615,7 @@ body {
         .look-avaible-rooms {
             a {
                 width: calc(100% - 5px);
-                font-size: 18px;
+                font-size: 16px;
             }
             
     
