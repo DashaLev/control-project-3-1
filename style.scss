@@ -11,9 +11,6 @@ body {
 
 .header {
     padding: 15px 10px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
     background-color: white;
     border-bottom: 3px solid #4e26fd;
 }
@@ -41,7 +38,8 @@ body {
 
     li {
         border: 2px solid transparent;
-        padding: 0 4px;
+        padding: 5px;
+        margin: 5px;
 
         a {
            @include linkMenuA(black);
