@@ -316,9 +316,13 @@ body {
 .search-form .place {
   height: 35px;
   width: 270px;
+  padding-left: 5px;
 }
 .search-form .search-title {
   padding: 10px 0 5px 10px;
+}
+.search-form .guest-rooms {
+  padding: 10px 0 5px 50px;
 }
 .search-form .chekin-date {
   height: 35px;
@@ -415,10 +419,13 @@ body {
   padding: 5px;
   border: 1px solid black;
   margin: 20px 0;
+  transition: all 1s;
 }
 .hotel-card .hotel-photo {
   margin-bottom: 5px;
+  padding: 5px;
   width: 100%;
+  border: 1px solid #e0d9d9;
   position: relative;
 }
 .hotel-card .hotel-photo a {
@@ -426,6 +433,9 @@ body {
 }
 .hotel-card .hotel-photo a img {
   width: 100%;
+}
+.hotel-card .hotel-photo a:last-child {
+  margin-top: 8px;
 }
 .hotel-card .hotel-photo .wishlist {
   width: 25px;
@@ -466,17 +476,8 @@ body {
 .hotel-card-descriptoin .hotel-address {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-.hotel-card-descriptoin .hotel-address a {
-  text-decoration: none;
-  display: block;
-  color: unset;
-  font-size: 12px;
   font-family: "Open Sans", sans-serif;
-}
-.hotel-card-descriptoin .hotel-address a:hover {
-  color: blue;
-  text-decoration: underline;
+  font-size: 12px;
 }
 .hotel-card-descriptoin .hotel-address-map {
   padding: 5px 22px;
@@ -507,6 +508,10 @@ body {
   display: block;
   color: black;
   font-size: 14px;
+}
+.hotel-card-descriptoin .hotel-comments a:hover {
+  color: blue;
+  text-decoration: underline;
 }
 
 .hotel-card-information {

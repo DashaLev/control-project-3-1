@@ -65,9 +65,13 @@ body {
     .place{
         height: 35px;
         width: 270px;
+        padding-left: 5px;
     }
     .search-title {
         padding: 10px 0 5px 10px;
+    }
+    .guest-rooms {
+        padding: 10px 0 5px 50px;
     }
     .chekin-date {
         height: 35px;
@@ -166,15 +170,21 @@ body {
     padding: 5px;
     border: 1px solid black;
     margin: 20px 0;
+    transition: all 1s;
     .hotel-photo {
         margin-bottom: 5px;
+        padding: 5px;
         width: 100%;
+        border: 1px solid #e0d9d9;
         position: relative;
         a {
             display: block;
             img {
                 width: 100%;
             }
+        }
+        a:last-child  {
+            margin-top: 8px;
         }
         .wishlist {
             width: 25px;
@@ -214,14 +224,8 @@ body {
     .hotel-address {
         padding-top: 5px;
         padding-bottom: 5px;
-        a {
-            @include  linkMenuA(unset,12px);
-            font-family: 'Open Sans', sans-serif;
-            &:hover {
-                color: blue;
-                text-decoration: underline;
-            }
-        } 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
     }
     .hotel-address-map {
         padding: 5px 22px;
@@ -245,6 +249,10 @@ body {
         padding: 10px 0;
         a {
             @include  linkMenuA(black,14px);
+            &:hover {
+                color: blue;
+                text-decoration: underline;
+            }
         } 
     }
 }
