@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Yusei Magic', sans-serif;
+    background-color: #f3f3f3;
 }
 
 .header {
@@ -201,9 +202,7 @@ body {
         }
         
     }
-    &:hover {
-        background-color:rgba(0, 0, 0, 0.2);
-    }
+   
 }
 .hotel-card-descriptoin {
     padding: 5px;
