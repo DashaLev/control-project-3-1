@@ -451,6 +451,9 @@ body {
 .hotel-card .hotel-photo .wishlist:hover {
   background: url(images/heart_blue_icon.png) no-repeat center;
 }
+.hotel-card:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 .hotel-card-descriptoin {
   padding: 5px;
