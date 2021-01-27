@@ -59,10 +59,13 @@ body {
 }
    
 .search-form {
-    background-color: black ;
+    background-color: #7f8c8c;
     padding: 10px;
-    border-bottom: 25px solid $maincolor;
+    border-bottom: 10px solid $maincolor;
     color: white;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    margin-top: 20px;
     .place{
         height: 35px;
         width: 270px;
@@ -99,13 +102,14 @@ body {
         width: 80px;
     }
     .search-button {
-        height: 35px;
+        height: 36px;
         width: 267px;
         margin: 20px 0;
         color: white;
         background-color: $maincolor;
         outline-color: black;
         border: 3px solid $maincolor;
+        border-radius: 4px;
     }
     button:hover {
         color: $maincolor;
@@ -127,9 +131,10 @@ body {
 .filter-menu {
     width: 300px;
     margin: 20px 0;
-    background-color:rgba(0, 0, 0, 0.2);
-    border-bottom: 25px solid $maincolor;
+    background-color:#e6e3e3;
+    border-bottom: 10px solid $maincolor;
     padding-left: 10px;
+    border-bottom-right-radius: 20px;
 }
 .filter-title {
     padding: 25px 10px 10px 10px;
@@ -154,8 +159,10 @@ body {
         width: calc(100% - 30px);
         color: white;
         background-color: $maincolor;
-        outline-color: none;
+        outline-color:transparent;
         border: 3px solid $maincolor;
+        border-radius: 4px;
+        margin-left: 5px;
     }
  
     button:hover {
@@ -168,16 +175,18 @@ body {
 .hotel-card {
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
-    border: 1px solid black;
+    padding: 20px;
     margin: 20px 0;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    border-bottom: 4px solid #e5e6e6;
     transition: all 1s;
     .hotel-photo {
         margin-bottom: 5px;
         padding: 5px;
-        width: 100%;
         border: 1px solid #e0d9d9;
         position: relative;
+        border-radius: 4px;
         a {
             display: block;
             img {
@@ -185,7 +194,7 @@ body {
             }
         }
         a:last-child  {
-            margin-top: 8px;
+            margin-top: 20px;
         }
         .wishlist {
             width: 25px;
@@ -211,6 +220,7 @@ body {
     padding: 5px;
     border: 1px solid #e0d9d9;
     margin-bottom: 5px;
+    border-radius: 4px;
 
     .hotel-name {
         padding-top: 5px;
@@ -261,6 +271,7 @@ body {
 .hotel-card-information {
     padding: 5px;
     border: 1px solid #e0d9d9;
+    border-radius: 4px;
     margin-bottom: 5px;
     width: 100%;
     text-align: center;
@@ -646,11 +657,9 @@ body {
         }
     }
 
-
-
-
-
 } 
+
+
 
 @media (min-width: 1200px) {
     .container {
