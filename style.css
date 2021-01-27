@@ -697,6 +697,91 @@ body {
   color: white;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal-block {
+  width: 400px;
+  margin: 80px auto;
+  height: 300px;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.subscribe-form h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.subscribe-form .btn-close {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: red;
+  border-radius: 4px;
+  font-size: 14px;
+  float: right;
+}
+.subscribe-form .close:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.subscribe-form input {
+  background-color: #e5e6e6;
+  border-radius: 4px;
+  height: 40px;
+  width: 75%;
+  margin: 10px 15px;
+  border-color: transparent;
+  padding: 10px;
+}
+.subscribe-form span {
+  padding-left: 15px;
+  color: #7f8c8c;
+}
+.subscribe-form .subscribe-send {
+  width: 150px;
+  height: 40px;
+  background-color: #4e26fd;
+  color: white;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 30%;
+}
+.subscribe-form .subscribe-send:hover {
+  border: 2px solid #4e26fd;
+  color: #4e26fd;
+  background-color: white;
+  font-weight: bold;
+}
+
 @media (max-width: 767px) {
   .header {
     position: sticky;

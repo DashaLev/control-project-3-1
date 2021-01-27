@@ -10,3 +10,31 @@ mobileMenu.addEventListener("click",function(){
         mainMenu.classList.remove("active-menu");
     }
 })
+
+
+// modal window 30 sec
+
+let modal = document.querySelector(".modal");
+let closeBtn = document.querySelector(".btn-close");
+let time = 30000;
+
+setTimeout(openModal, time)
+
+function openModal () {
+    modal.classList.add("show");
+    modal.classList.remove("hide");
+}
+
+function closeModal() {
+    modal.classList.add("hide")
+    modal.classList.remove("show")
+}
+
+closeBtn.addEventListener ("click", closeModal)
+
+modal.addEventListener("click", function(e){
+    if(e.target == modal) {
+        closeModal()
+    }
+})
+
